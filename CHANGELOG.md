@@ -1,4 +1,4 @@
-## 1.0.1
+## 1.0.2
 
 * Initial release of morphix_button
 * 4 styles — filled, outlined, neon, gradient
