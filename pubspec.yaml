@@ -1,6 +1,6 @@
 name: morphix_button
-description: A premium animated async-button Flutter package. Handles the full async button lifecycle — idle, loading, success, error — with spring physics, particle burst, neon glow, and gradient styles.
-version: 1.0.0
+description: A premium animated async button for Flutter with spring physics, particle burst, neon glow, and gradient styles.
+version: 1.0.1
 repository: https://github.com/originehsan/morphix_button
 issue_tracker: https://github.com/originehsan/morphix_button/issues
 
