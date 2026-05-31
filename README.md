@@ -110,15 +110,15 @@ Morphix(
 
 ## 7 Animations
 
-Animation | Description
---- | ---
-Liquid collapse | Width spring leads, radius follows. Center-bulge before snapping. Real `SpringSimulation` — not easing curves.
-Rotating gradient arc | Gradient spins inside circle during loading. Gradient style only.
-Stroke checkmark | Draws in two segments via `CustomPainter`. Not an icon. Not a fade-in. It draws.
-Particle burst | 12 brand-color dots explode when checkmark finishes. Fade as they fly.
-iOS shake | Three decaying oscillations on error. Auto-resets to idle.
-Press scale | 96% on finger down, springs back on release. 80ms response.
-Shadow bloom | Glow pulse on neon idle and during loading.
+| Animation | Description |
+|---|---|
+| Liquid collapse | Width spring leads, radius follows. Center-bulge before snapping. Real `SpringSimulation` — not easing curves. |
+| Rotating gradient arc | Gradient spins inside circle during loading. Gradient style only. |
+| Stroke checkmark | Draws in two segments via `CustomPainter`. Not an icon. Not a fade-in. It draws. |
+| Particle burst | 12 brand-color dots explode when checkmark finishes. Fade as they fly. |
+| iOS shake | Three decaying oscillations on error. Auto-resets to idle. |
+| Press scale | 96% on finger down, springs back on release. 80ms response. |
+| Shadow bloom | Glow pulse on neon idle and during loading. |
 
 ## Progress mode
 
@@ -290,20 +290,20 @@ Morphix(
 
 12 vulnerabilities fixed before v1.0.0:
 
-# | Vulnerability | Fix
---- | --- | ---
-1 | Rapid multi-tap | `_isBusy` guard before first `await`
-2 | setState after dispose | `_isDisposed` + `mounted` check
-3 | Synchronous throw | `Future.microtask()` wraps `onTap`
-4 | AnimationController after dispose | All disposed atomically
-5 | onTap null | Silent no-op
-6 | Controller after dispose | `_disposed` guard
-7 | successDuration zero | Clamped to 500ms
-8 | Controller swapped on rebuild | `didUpdateWidget` re-wires
-9 | Screen rotation stale width | `LayoutBuilder` every build
-10 | Timer after dispose | Cancelled in dispose
-11 | RTL languages | Directionality-agnostic
-12 | Long label overflow | ellipsis + padding
+| # | Vulnerability | Fix |
+|---|---|---|
+| 1 | Rapid multi-tap | `_isBusy` guard before first `await` |
+| 2 | setState after dispose | `_isDisposed` + `mounted` check |
+| 3 | Synchronous throw | `Future.microtask()` wraps `onTap` |
+| 4 | AnimationController after dispose | All disposed atomically |
+| 5 | onTap null | Silent no-op |
+| 6 | Controller after dispose | `_disposed` guard |
+| 7 | successDuration zero | Clamped to 500ms |
+| 8 | Controller swapped on rebuild | `didUpdateWidget` re-wires |
+| 9 | Screen rotation stale width | `LayoutBuilder` every build |
+| 10 | Timer after dispose | Cancelled in dispose |
+| 11 | RTL languages | Directionality-agnostic |
+| 12 | Long label overflow | ellipsis + padding |
 
 ## State machine
 
@@ -318,12 +318,12 @@ disabled ──tap─────────→ nothing
 
 ## Roadmap
 
-Version | Features
---- | ---
-v1.0 | Core lifecycle, 4 styles, spring physics, particles, neon, gradient, progress, accessibility
-v1.1 | MorphixTheme InheritedWidget, MorphixStyle.glass
-v1.2 | Custom particles, custom haptics
-v2.0 | interactix kit — MorphixLoader, MorphixCard, MorphixInput
+| Version | Features |
+|---|---|
+| v1.0 | Core lifecycle, 4 styles, spring physics, particles, neon, gradient, progress, accessibility |
+| v1.1 | MorphixTheme InheritedWidget, MorphixStyle.glass |
+| v1.2 | Custom particles, custom haptics |
+| v2.0 | interactix kit — MorphixLoader, MorphixCard, MorphixInput |
 
 ## License
 
